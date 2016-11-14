@@ -48,8 +48,7 @@ public class GaussianNoise {
         do {
             ran = (int)Math.round(random.nextGaussian()*_mNoiseFactor);
             v = channel + ran;
-            // check whether it is valid single channel value
-            inRange = (v>=0 && v<=255);
+            inRange = (v>=0 && v<=255);// check whether it is valid single channel value
             if (inRange)
             {
                 channel = v;

@@ -15,11 +15,10 @@ public class SaltAndPepper {
     {
         int width=img.getWidth();
         int height=img.getHeight();
+        int x,y,temp,rgb;
         Random random=new Random();
         double ran=random.nextDouble();
         int size= (int)(width*height * (1-ran));
-        int x,y,temp,rgb;
-
         for(int i=0;i<size;i++)
         {
             //随机点添加

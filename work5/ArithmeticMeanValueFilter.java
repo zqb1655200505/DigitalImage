@@ -27,7 +27,6 @@ public class ArithmeticMeanValueFilter {
                         for(int h=j-1;h<=j+1;h++)
                         {
                             count(image.getRGB(k,h));
-                            //multe(image.getRGB(k,h));
                         }
                     }
                     int newrgb=new Color(r/9,g/9,b/9).getRGB();
